@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title text-center">HTML All Inputs are Here</h2>
+            <form class="row g-3 mt-4">
+                <div class="col-md-4">
+                  <label for="name" class="form-label">First Name</label>
+                  <input type="text" class="form-control" placeholder="Sayma">
+                </div>
+                <div class="col-md-4">
+                  <label for="name" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" placeholder="Akther">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Enter your phone number:</label> <br>
+                    <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Date of birth:</label> <br>
+                <input class="form-control" type="date" id="birth" name="birt-date" value="2000-01-01" min="2000-01-01" max="2006-12-30">
+                </div>
+                <div class="col-md-4">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me 
+                    </label>
+                  </div>
+                <div class="col-md-4">
+                    <label class="cont">Volume</label> <br>
+                    <input class="" type="range" id="volume" name="volume" min="0" max="11">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose Institute</option>
+                    <option value="rangpur">Rangpur Polytechnic Institute</option>
+                    <option value="dhaka">Dhaka Polytechnic Institute</option>
+                    <option value="rajshahi">Rajshahi Polytechnic Institute</option>
+                    <option value="kuri">Kurigram Polytechnic Institute</option>
+                    <option value="barishal">Barishal Polytechnic Institute</option>
+                    <option value="shilet">Shilet Polytechnic Institute</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+            <!-- <form class="row g-3">
+                <label>First name:</label><br>
+                <input type="text" placeholder="Sayma" class="name"><br>
+                <label>Last name:</label><br>
+                <input type="text" placeholder="Akther" class="name"><br>
+                <label>Email Address:</label><br>
+                <input type="email" id="email-address" name="email" placeholder="email@.com" class="name" required><br>
+                <label>Enter your phone number:</label> <br>
+                <input type="tel" class="name" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <br>
+                
+    
+    
+                <p>Choose your Gender:</p>
+                <input type="radio" id="male" name="male" value="male">
+                <label>Male</label> <br>
+                <input type="radio" id="female" name="female" value="female">
+                <label>Female</label> <br>
+                <br>
+    
+                <label>Choose an Institute:</label><br>
+                <select name="institute" class="name">
+                    <option value="">--Please choose an option--</option>
+                    <option value="rangpur">Rangpur Polytechnic Institute</option>
+                    <option value="dhaka">Dhaka Polytechnic Institute</option>
+                    <option value="rajshahi">Rajshahi Polytechnic Institute</option>
+                    <option value="kuri">Kurigram Polytechnic Institute</option>
+                    <option value="barishal">Barishal Polytechnic Institute</option>
+                    <option value="shilet">Shilet Polytechnic Institute</option>
+                </select><br>
+                <p>Choose your Status:</p>
+                <input type="checkbox" value="Student">
+                <label> I am a Student</label><br>
+                <input type="checkbox" value="Teacher">
+                <label> I am Teacher</label><br>
+    
+                <br>
+    
+                <label>Date of birth:</label> <br>
+                <input class="name" type="date" id="birth" name="birt-date" value="2000-01-01" min="2000-01-01"
+                    max="2006-12-30">
+                <br>
+                <label>Volume</label> <br>
+            <input type="range" id="volume" name="volume" min="0" max="11">
+            <br><br>
+                <label for="cv">Upload CV</label><br>
+                <input type="file" id="cv" name="cv">
+                <br><br>
+                <label>Enter an https:// URL:</label> <br>
+            <input type="url" name="url" class="name" placeholder="https://banglafighter.com" pattern="https://.*" size="30" required>
+            <br><br>
+            <label for="head">Choose your Color</label> <br>
+            <input type="color" id="head" name="head" value="#00bfff">
+            <br><br>
+            <label for="camp-week">Choose a week in May or June:</label> <br>
+            <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+            <br><br>
+                <label>Password (8 characters minimum):</label> <br>
+                <input class="name" type="password" id="pass" name="password" minlength="8" required>
+                <br>
+                <label>Add your comments</label> <br>
+                <textarea name="example" rows="4" cols="50">
+            Enter your more information
+            </textarea>
+                <br><br>
+                <input class="reset" type="reset" value="Reset">
+    
+    
+    
+                <input class="save" type="submit" value="Save">
+            </form> -->
+        </div>
+      </div>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
